@@ -1,0 +1,27 @@
+From: Kali Developers <devel@kali.org>
+Date: Tue, 22 Jun 2021 14:39:40 +0200
+Subject: add-needed-dirs
+
+Added the bin and tmp directories
+that the Makefile needs.
+---
+ bin/readme.txt | 1 +
+ tmp/readme.txt | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 bin/readme.txt
+ create mode 100644 tmp/readme.txt
+
+diff --git a/bin/readme.txt b/bin/readme.txt
+new file mode 100644
+index 0000000..035e5b4
+--- /dev/null
++++ b/bin/readme.txt
+@@ -0,0 +1 @@
++Directed is needed by Makefile
+diff --git a/tmp/readme.txt b/tmp/readme.txt
+new file mode 100644
+index 0000000..6dc5aa4
+--- /dev/null
++++ b/tmp/readme.txt
+@@ -0,0 +1 @@
++Directory is needed by Makefile

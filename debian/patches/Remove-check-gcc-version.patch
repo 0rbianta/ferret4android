@@ -1,0 +1,21 @@
+From: Sophie Brun <sophie@offensive-security.com>
+Date: Tue, 22 Jun 2021 14:47:22 +0200
+Subject: Remove check gcc version
+
+---
+ src/pixie.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/pixie.c b/src/pixie.c
+index ef62945..eac70c7 100644
+--- a/src/pixie.c
++++ b/src/pixie.c
+@@ -681,7 +681,7 @@ pixie_locked_xadd_u32(unsigned *lhs, unsigned rhs)
+ {
+ #if defined(_MSC_VER)
+     return InterlockedExchangeAdd((long*)lhs, rhs);
+-#elif defined(__GNUC__) && __GNUC__ == 4 
++#elif defined(__GNUC__) /* && __GNUC__ == 4 */
+ 	return (unsigned)__sync_fetch_and_add(lhs, rhs);
+ #if 0 && defined(__i386__)
+     unsigned ret;

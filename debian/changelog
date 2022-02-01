@@ -1,0 +1,71 @@
+ferret-sidejack (3.0.1-1kali9) kali-dev; urgency=medium
+
+  * gitlab-ci: disable build all
+  * Change upstream repository (see
+    https://gitlab.com/kalilinux/packages/ferret-sidejack/-/issues/2)
+  * Rename /usr/bin/ferret to /usr/bin/ferret-sidejack (see
+    https://gitlab.com/kalilinux/packages/ferret-sidejack/-/issues/3)
+  * Bump Standards-Version to 4.6.0
+
+ -- Sophie Brun <sophie@offensive-security.com>  Thu, 18 Nov 2021 16:18:29 +0100
+
+ferret-sidejack (3.0.1-1kali8) kali-dev; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Update Maintainer field
+  * Update Vcs-* fields for the move to gitlab.com
+  * Add GitLab's CI configuration file
+  * Configure git-buildpackage for Kali
+  * Update URL in GitLab's CI configuration file
+
+  [ Sophie Brun ]
+  * Update Standards-Version and debhelper-compat
+  * Refresh patches
+  * Add a patch to build with all gcc
+  * Bump Standards-Version to 4.5.1
+  * Fix debian/copyright
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 22 Jun 2021 15:01:26 +0200
+
+ferret-sidejack (3.0.1-1kali7) kali; urgency=low
+
+  * Removed amd64 from available architectures (Closes: 0000289)
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 03 Oct 2013 14:10:15 -0600
+
+ferret-sidejack (3.0.1-1kali6) kali; urgency=low
+
+  * Revision bump to force rebuild
+
+ -- Devon Kearns <dookie@kali.org>  Wed, 27 Mar 2013 07:49:43 -0600
+
+ferret-sidejack (3.0.1-1kali5) kali; urgency=low
+
+  * Changed install to fix bug 184
+
+ -- Devon Kearns <dookie@kali.org>  Wed, 27 Mar 2013 07:31:46 -0600
+
+ferret-sidejack (3.0.1-1kali4) kali; urgency=low
+
+  * Edited rules to use ferret-sidejack as the binary name in lieu of
+    ferret
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 11 Feb 2013 14:50:04 -0700
+
+ferret-sidejack (3.0.1-1kali3) kali; urgency=low
+
+  * Remove desktop file
+
+ -- Mati Aharoni <muts@kali.org>  Sat, 15 Dec 2012 08:11:35 -0500
+
+ferret-sidejack (3.0.1-1kali2) kali; urgency=low
+
+  * Revision bump due to server crash
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 26 Nov 2012 16:27:52 -0700
+
+ferret-sidejack (3.0.1-1kali1) kali; urgency=low
+
+  * Initial release 
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 26 Nov 2012 14:10:40 -0700
