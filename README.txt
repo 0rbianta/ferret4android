@@ -86,3 +86,22 @@ AUTHOR:
 
 Robert Graham <robert_david_graham@yahoo.com>
 
+
+--
+Ported to Android by 0rbianta
+ABI: aarch64-linux-android30
+Target: Android 11
+Compiler: Clang
+
+Install:
+1) Compile
+2) Copy ferret binary to /sdcard
+3) Copy /sdcard/ferret to /data/local/tmp
+4) Copy lib/libc++_shared.so to /sdcard
+5) Copy /sdcard/libc++_shared.so /system/lib64
+
+Installisation Complete!
+Execute:
+cd /data/local/tmp
+./ferret -i <interface> (wlan0)
+
