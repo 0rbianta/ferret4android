@@ -100,7 +100,7 @@ Install:
 4) Copy lib/libc++_shared.so to /sdcard
 5) Copy /sdcard/libc++_shared.so /system/lib64
 
-Installisation Complete!
+Installation Complete!
 Execute:
 cd /data/local/tmp
 ./ferret -i <interface> (wlan0)
